@@ -1,0 +1,31 @@
+{
+    "name": "@flowforge/nr-persistent-context",
+    "version": "0.0.1",
+    "description": "A Node-RED Persistent Context Plugin for the FlowForge platform",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint -c .eslintrc lib/*.js",
+        "lint:fix": "eslint -c .eslintrc lib/*.js --fix"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/flowforge/flowforge-nr-persistent-context.git"
+    },
+    "bugs": {
+        "url": "https://github.com/flowforge/flowforge-nr-persistent-context/issues"
+    },
+    "homepage": "https://github.com/flowforge/flowforge-nr-persistent-context#readme",
+    "author": {
+        "name": "FlowForge Inc."
+    },
+    "license": "Apache-2.0",
+    "dependencies": {
+        "got": "11.8.5"
+    },
+    "devDependencies": {
+        "eslint": "^8.25.0",
+        "eslint-config-standard": "^17.0.0"
+    }
+}
