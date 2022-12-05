@@ -1,4 +1,4 @@
-# @flowforge/nr-auth
+# @flowforge/nr-persistent-context
 
 A Node-RED Context Plugin for the FlowForge platform.
 
@@ -10,7 +10,7 @@ on the FlowForge platform.
 ```js
 contextStorage: {
     file: {
-        module: require("@flowforge/nr-context"),
+        module: require("@flowforge/nr-persistent-context"),
         config: {
             projectID: process.env['FORGE_PROJECT_ID'],
             baseURL: process.env['FORGE_STORAGE_URL'],
