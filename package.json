@@ -1,6 +1,6 @@
 {
     "name": "@flowforge/nr-persistent-context",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A Node-RED Persistent Context Plugin for the FlowForge platform",
     "main": "lib/index.js",
     "scripts": {
@@ -22,7 +22,8 @@
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "got": "11.8.5"
+        "got": "11.8.5",
+        "json-stringify-safe": "5.0.1"
     },
     "devDependencies": {
         "eslint": "^8.25.0",
