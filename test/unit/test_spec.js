@@ -66,7 +66,6 @@ context:
 }
 
 describe('Context Plugin', async function () {
-    this.timeout(65000)
     let flowforgeApp
     let fileServerApp
     const plugin = require('../../lib/index')({
@@ -152,7 +151,6 @@ describe('Context Plugin', async function () {
     })
 
     describe('Access nested properties', async function () {
-        this.timeout(65000)
         const nested = {
             obj1: { prop1: 1 },
             arr1: [11, 22, 33],
@@ -219,7 +217,6 @@ describe('Context Plugin', async function () {
     })
 
     describe('Set nested properties in context', async function () {
-        this.timeout(65000)
         const nested = {
             obj1: { prop1: 1 },
             arr1: [11, 22, 33],
@@ -267,7 +264,6 @@ describe('Context Plugin', async function () {
     })
 
     describe('Delete context entries', async function () {
-        this.timeout(65000)
         const nested = {
             obj1: { prop1: 1 },
             arr1: [11, 22, 33],
@@ -317,7 +313,6 @@ describe('Context Plugin', async function () {
         })
     })
     describe('Get Keys', async function () {
-        this.timeout(65000)
         before(async function () {
             await plugin.clean()
             await setContext('node-1', 'node-1-var-1', 'node-1-value-1')
@@ -358,7 +353,6 @@ describe('Context Plugin', async function () {
     })
 
     describe('Delete Scope', async function () {
-        this.timeout(65000)
         beforeEach(async function () {
             await plugin.clean()
             await setContext('node-1', 'node-1-var-1', 'node-1-value-1')
