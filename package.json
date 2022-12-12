@@ -4,7 +4,7 @@
     "description": "A Node-RED Persistent Context Plugin for the FlowForge platform",
     "main": "lib/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "mocha \"test/**/*_spec.js\"",
         "lint": "eslint -c .eslintrc lib/*.js",
         "lint:fix": "eslint -c .eslintrc lib/*.js --fix"
     },
@@ -26,8 +26,11 @@
         "json-stringify-safe": "5.0.1"
     },
     "devDependencies": {
+        "@flowforge/file-server": "^0.0.4",
         "eslint": "^8.25.0",
-        "eslint-config-standard": "^17.0.0"
+        "eslint-config-standard": "^17.0.0",
+        "mocha": "^10.1.0",
+        "should": "^13.2.3"
     },
     "engines": {
         "node": ">=16.x"
