@@ -39,3 +39,5 @@ contextStorage: {
   // UNSUPPORTED...
   // global.set("var1", "persistent", "i am the value")
   // const value = global.get("var1", "persistent")
+  ```
+ 
