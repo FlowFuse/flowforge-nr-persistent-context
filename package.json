@@ -30,6 +30,7 @@
         "@flowforge/file-server": "^0.0.4",
         "eslint": "^8.25.0",
         "eslint-config-standard": "^17.0.0",
+        "sqlite3": "^5.1.2",
         "mocha": "^10.1.0",
         "should": "^13.2.3"
     },
