@@ -12,7 +12,6 @@ const FORGE_STORAGE_URL = 'http://127.0.0.1:3001'
 const fileServerHost = '0.0.0.0'
 const fileServerPort = 3001
 const fileServerContext = { type: 'sequelize', quota: 1000, options: { type: 'sqlite', storage: 'ff-context-test.db' } }
-// const fileServerContext = { type: 'sequelize', quota: 1000, options: { type: 'sqlite', storage: ':memory:' } }
 const fileServerBaseUrl = 'http://127.0.0.1:3002' // URL to FF App
 // app (and auth) server settings
 const authHost = '0.0.0.0'
@@ -493,7 +492,6 @@ describe('Context Plugin', async function () {
         })
 
         describe('Clean context', async function () {
-            this.timeout(30000)
             it('should remove all context except global scope', async function () {
                 await setContext('node-1:flow-1', 'node-1-var-1', 'node-1-value-1')
                 await setContext('node-2:flow-1', 'node-2-var-1', 'node-2-value-1')
