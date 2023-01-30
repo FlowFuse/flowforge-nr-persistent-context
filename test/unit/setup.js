@@ -71,12 +71,9 @@ context:
     quota: ${config.context?.quota || 1000}
     options:
         type: ${config.context?.options?.type || 'sqlite'}
-        # storage: ":memory:"
         storage: ${config.context?.options?.storage || '":memory:"'}
 `
-    // const app = await require('@flowforge/file-server')
-    // eslint-disable-next-line import/no-absolute-path
-    const app = await require('C:/Users/sdmcl/repos/gihub/flowforge-dev-env/packages/flowforge-file-storage/index.js')
+    const app = await require('@flowforge/file-server')
     return app
 }
 
