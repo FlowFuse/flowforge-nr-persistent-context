@@ -27,7 +27,7 @@
         "@node-red/util": "3.0.2"
     },
     "devDependencies": {
-        "@flowforge/file-server": "^0.0.4",
+        "@flowforge/file-server": "git://github.com/flowforge/flowforge-file-server.git",
         "eslint": "^8.25.0",
         "eslint-config-standard": "^17.0.0",
         "sqlite3": "^5.1.2",
