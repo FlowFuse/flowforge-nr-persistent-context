@@ -14,30 +14,20 @@ contextStorage: {
         config: {
             projectID: process.env['FORGE_PROJECT_ID'],
             baseURL: process.env['FORGE_STORAGE_URL'],
-            token: process.env['FORGE_STORAGE_TOKEN']
+            token: process.env['FORGE_STORAGE_TOKEN'],
+            requestTimeout: 3000,
+            pageSize: 20,
+            flushInterval: 30,
+            cache: true
         }
     }
 }
 ```
 
- - `projectID` - is the UUID of the project
- - `baseURL` - the root URL for the FlowForge Storage API
- - `token` - authentication token
-
-### Known Limitations
-- Currently, only async versions of context get and context set are supported
-  e.g. 
-  ```js
-  // SUPPORTED...
-  global.set("var1", "persistent", "i am the value", (err) => {
-     //do something
-  })
-  global.get("var1", "persistent", (err, val) => {
-    //do something with val
-  })
-  
-  // UNSUPPORTED...
-  // global.set("var1", "persistent", "i am the value")
-  // const value = global.get("var1", "persistent")
-  ```
- 
+ - `projectID` - is the UUID of the project (provided by FlowForge)
+ - `baseURL` - the root URL for the FlowForge Storage API (provided by FlowForge)
+ - `token` - authentication token (provided by FlowForge)
+ - `requestTimeout` - (optional) The number of milliseconds to wait before timing out a request (Type:`number`, Default:`3000`)
+ - `pageSize` - (optional) The number of context items/rows to fetch per page (Type:`number`, Default:`20`)
+ - `flushInterval` - (optional) The number of seconds to wait before flushing pending writes (Type:`number`, Default:`30`)
+ - `cache` - (optional) Whether to cache context items in memory (required for synchronous get/set) (Type:`boolean`, Default:`true`)
