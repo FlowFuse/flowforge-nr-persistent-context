@@ -48,6 +48,6 @@ jobs:
           scope: '@flowforge'
           always-auth: true
 
-      - run: npm publish --ignore-scripts --tag 'nightly' .
+      - run: npm publish --ignore-scripts --tag 'nightly'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
