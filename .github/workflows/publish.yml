@@ -20,3 +20,4 @@ jobs:
     with:
       package_name: nr-persistent-context
       publish_package: true
+
