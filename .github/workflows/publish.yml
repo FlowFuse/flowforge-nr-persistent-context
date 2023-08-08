@@ -15,7 +15,6 @@ jobs:
     uses: 'flowforge/github-actions-workflows/.github/workflows/build_node_package.yml@main'
 
   publish:
-    if: false
     needs: build
     uses: 'flowforge/github-actions-workflows/.github/workflows/publish_node_package.yml@fix-publish-with-npm'
     with:
@@ -23,6 +22,7 @@ jobs:
       publish_package: true
 
   directPublish:
+    if: false
     needs: build
     runs-on: ubuntu-latest
     permissions:
