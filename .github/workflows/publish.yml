@@ -12,11 +12,13 @@ on:
 
 jobs:
   build:
-    uses: 'flowforge/github-actions-workflows/.github/workflows/build_node_package.yml@main'
+    uses: 'flowforge/github-actions-workflows/.github/workflows/build_node_package.yml@feat-run-tests-on-build'
+    with:
+      run_tests: true
 
   publish:
     needs: build
-    uses: 'flowforge/github-actions-workflows/.github/workflows/publish_node_package.yml@fix-publish-with-npm'
+    uses: 'flowforge/github-actions-workflows/.github/workflows/publish_node_package.yml@main'
     with:
       package_name: nr-persistent-context
       publish_package: true
