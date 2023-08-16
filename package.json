@@ -24,7 +24,7 @@
     "dependencies": {
         "got": "11.8.5",
         "json-stringify-safe": "5.0.1",
-        "@node-red/util": "3.0.2"
+        "@node-red/util": "^3.0.2"
     },
     "devDependencies": {
         "@flowforge/file-server": "git://github.com/flowforge/flowforge-file-server.git",
