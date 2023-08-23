@@ -47,4 +47,3 @@ jobs:
           ref: main
           token: ${{ steps.generate_token.outputs.token }}
           inputs: '{"nr_persistent_context_ref": "${{ github.ref }}", "nr_persistent_context_release_name": "${{ needs.publish.outputs.release_name }}"}'
-    
