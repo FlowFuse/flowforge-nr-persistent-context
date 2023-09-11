@@ -22,15 +22,15 @@
     },
     "license": "SEE LICENSE in LICENSE",
     "dependencies": {
-        "got": "11.8.5",
+        "got": "11.8.6",
         "json-stringify-safe": "5.0.1",
-        "@node-red/util": "^3.0.2"
+        "@node-red/util": "^3.1.0"
     },
     "devDependencies": {
         "@flowforge/file-server": "git://github.com/flowforge/flowforge-file-server.git",
         "eslint": "^8.25.0",
         "eslint-config-standard": "^17.0.0",
-        "sqlite3": "^5.1.2",
+        "sqlite3": "^5.1.6",
         "mocha": "^10.1.0",
         "should": "^13.2.3",
         "yaml": "^2.1.3"
