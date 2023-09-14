@@ -1,6 +1,6 @@
 {
     "name": "@flowforge/nr-persistent-context",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A Node-RED Persistent Context Plugin for the FlowForge platform",
     "main": "lib/index.js",
     "scripts": {
