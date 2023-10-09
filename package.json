@@ -1,7 +1,7 @@
 {
     "name": "@flowforge/nr-persistent-context",
     "version": "0.0.5",
-    "description": "A Node-RED Persistent Context Plugin for the FlowForge platform",
+    "description": "A Node-RED Persistent Context Plugin for the FlowFuse platform",
     "main": "lib/index.js",
     "scripts": {
         "test": "mocha \"test/**/*_spec.js\"",
@@ -11,14 +11,14 @@
     "keywords": [],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/flowforge/flowforge-nr-persistent-context.git"
+        "url": "git+https://github.com/FlowFuse/nr-persistent-context.git"
     },
     "bugs": {
-        "url": "https://github.com/flowforge/flowforge-nr-persistent-context/issues"
+        "url": "https://github.com/FlowFuse/nr-persistent-context/issues"
     },
-    "homepage": "https://github.com/flowforge/flowforge-nr-persistent-context#readme",
+    "homepage": "https://github.com/FlowFuse/nr-persistent-context#readme",
     "author": {
-        "name": "FlowForge Inc."
+        "name": "FlowFuse Inc."
     },
     "license": "SEE LICENSE in LICENSE",
     "dependencies": {
@@ -27,7 +27,7 @@
         "@node-red/util": "^3.1.0"
     },
     "devDependencies": {
-        "@flowforge/file-server": "git://github.com/flowforge/flowforge-file-server.git",
+        "@flowforge/file-server": "git://github.com/FlowFuse/file-server.git",
         "eslint": "^8.25.0",
         "eslint-config-standard": "^17.0.0",
         "sqlite3": "^5.1.6",

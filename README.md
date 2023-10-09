@@ -1,9 +1,9 @@
 # @flowforge/nr-persistent-context
 
-A Node-RED Context Plugin for the FlowForge platform.
+A Node-RED Context Plugin for the FlowFuse platform.
 
 This plugin provides persistent context for a Node-RED instance
-on the FlowForge platform.
+on the FlowFuse platform.
 
 ### Configuration
 
@@ -24,9 +24,9 @@ contextStorage: {
 }
 ```
 
- - `projectID` - is the UUID of the project (provided by FlowForge)
- - `baseURL` - the root URL for the FlowForge Storage API (provided by FlowForge)
- - `token` - authentication token (provided by FlowForge)
+ - `projectID` - is the UUID of the project (provided by FlowFuse)
+ - `baseURL` - the root URL for the FlowForge Storage API (provided by FlowFuse)
+ - `token` - authentication token (provided by FlowFuse)
  - `requestTimeout` - (optional) The number of milliseconds to wait before timing out a request (Type:`number`, Default:`3000`)
  - `pageSize` - (optional) The number of context items/rows to fetch per page (Type:`number`, Default:`20`)
  - `flushInterval` - (optional) The number of seconds to wait before flushing pending writes (Type:`number`, Default:`30`)
