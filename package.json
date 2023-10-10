@@ -1,5 +1,5 @@
 {
-    "name": "@flowforge/nr-persistent-context",
+    "name": "@flowfuse/nr-persistent-context",
     "version": "0.0.5",
     "description": "A Node-RED Persistent Context Plugin for the FlowFuse platform",
     "main": "lib/index.js",
@@ -27,7 +27,7 @@
         "@node-red/util": "^3.1.0"
     },
     "devDependencies": {
-        "@flowforge/file-server": "git://github.com/FlowFuse/file-server.git",
+        "@flowfuse/file-server": "git://github.com/FlowFuse/file-server.git",
         "eslint": "^8.25.0",
         "eslint-config-standard": "^17.0.0",
         "sqlite3": "^5.1.6",

@@ -55,7 +55,7 @@ function authServer (config = {}) {
  * @param {number} config.context.quota context quota (max size in MB)
  * @param {Object} config.context.options context options (depends on context type)
  * @param {'sqlite'|'postgres'} config.context.options.type context options type
- * @returns @flowforge/file-server
+ * @returns @flowfuse/file-server
  */
 async function setupFileServerApp (config = {}) {
     const FF_FS_TEST_CONFIG = {
@@ -84,7 +84,7 @@ async function setupFileServerApp (config = {}) {
         FF_FS_TEST_CONFIG.context.options.storage = { ...config.context?.options }
     }
     process.env.FF_FS_TEST_CONFIG = YAML.stringify(FF_FS_TEST_CONFIG)
-    const app = await require('@flowforge/file-server')
+    const app = await require('@flowfuse/file-server')
     return app
 }
 
